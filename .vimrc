@@ -6,9 +6,13 @@ filetype plugin indent on
 set foldmethod=indent
 set foldlevel=99
 
+set laststatus=2
+set statusline=%{fugitive#statusline()}
+
 set incsearch
 set ignorecase
 set smartcase
+
 
 " This is the default CursorLine background term color:
 let g:CursorLineDefaultColor=236
@@ -40,15 +44,15 @@ set completeopt=menuone,longest,preview
 nmap <leader>a <Esc>:Ack!
 nnoremap <leader>v <Plug>TaskList
 nnoremap <leader>b :BufExplorer<CR>
+nnoremap <c-z> :GundoToggle<CR>
 set completeopt-=preview
 set wrap linebreak nolist
 
 " remap jj to Escape while in insert mode
 inoremap jj <Esc>
 
-" remap '`' to <c-f> in normal mode. This is mainly to use in CtrlP to switch
-" modes
-nnoremap ` <c-f>
+" Use netrw to view the current file's directory using '\o'
+nnoremap <leader>o :e %:p:h<CR>
 
 " In normal mode, type '\]' to help find the cursor
 function! Highlight_cursor ()
