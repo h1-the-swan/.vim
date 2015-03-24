@@ -1,3 +1,6 @@
+" To use this vimrc create a symlink to it in the home directory
+" ln -s ~/.vim/.vimrc ~/.vimrc
+
 execute pathogen#infect()
 "syntax on
 syntax enable
@@ -7,7 +10,7 @@ set foldmethod=indent
 set foldlevel=99
 
 set laststatus=2
-set statusline=%{fugitive#statusline()}
+set statusline=%%<%f\ \ %{fugitive#statusline()}\ \ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 set incsearch
 set ignorecase
@@ -67,12 +70,6 @@ function! Highlight_cursor ()
 	execute "highlight CursorLine ctermbg=".g:CursorLineDefaultColor
 endfunction
 nnoremap <leader>] :silent call Highlight_cursor()<CR>
-
-" LaTeX (rubber) macro for compiling
-nnoremap <leader>c :w<CR>:!rubber --pdf --warn all %<CR>
-"
-" " View PDF macro; '%:r' is current file's root (base) name.
-nnoremap <leader>p :!open -a Preview %:r.pdf &<CR><CR>
 
 " Shortcut to save changes to the current file:
 nnoremap <leader>s :update<CR>
