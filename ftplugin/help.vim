@@ -6,3 +6,5 @@
 nnoremap <buffer> <CR> <c-]>
 " remap 'backspace' to go back to the previous tag
 nnoremap <buffer> <BS> <C-T>
+
+setlocal nospell

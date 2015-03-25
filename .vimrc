@@ -12,7 +12,7 @@ set foldlevel=99
 set laststatus=2
 set statusline=%%<%f\ \ %{fugitive#statusline()}\ \ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
-set incsearch
+set incsearch  " Incremental search
 set ignorecase
 set smartcase
 
@@ -38,6 +38,16 @@ execute "highlight CursorLine ctermbg=".g:CursorLineDefaultColor
 
 
 colorscheme Tomorrow-Night
+
+" Turn on spell check
+augroup SpellCheck
+	autocmd FileType tex,markdown,text setlocal spell spelllang=en_us
+augroup END
+" set global colors for spell check highlighting
+highlight SpellBad ctermfg=LightRed ctermbg=NONE
+highlight SpellCap ctermfg=LightRed ctermbg=NONE
+highlight SpellLocal ctermfg=LightRed ctermbg=NONE
+highlight SpellRare ctermfg=LightRed ctermbg=NONE
 
 
 let g:pyflakes_use_quickfix = 0
@@ -73,13 +83,6 @@ nnoremap <leader>] :silent call Highlight_cursor()<CR>
 
 " Shortcut to save changes to the current file:
 nnoremap <leader>s :update<CR>
-
-" Make Vim recognize .md files as markdown files:
-" http://superuser.com/questions/701496/no-syntax-highlight-on-md-files
-augroup markdown
-	autocmd!
-	autocmd BufRead,BufNew *.md set filetype=markdown
-augroup END
 
 " Use the Pencil plugin for writing prose (using soft line wrappings)
 " https://github.com/reedes/vim-pencil
