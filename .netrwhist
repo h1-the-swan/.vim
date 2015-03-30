@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/jporteno/.vim'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/jporteno/Dropbox'
 let g:netrw_dirhist_2='/Users/jporteno'
-let g:netrw_dirhist_3='/Users/jporteno/.vim/ftdetect'
-let g:netrw_dirhist_4='/Users/jporteno/.vim/ftplugin'
+let g:netrw_dirhist_3='/Users/jporteno/.vim'
+let g:netrw_dirhist_4='/Users/jporteno/.vim/bundle'
+let g:netrw_dirhist_5='/Users/jporteno/.vim/bundle/fugitive'
+let g:netrw_dirhist_6='/Users/jporteno/.vim/bundle/fugitive/plugin'
+let g:netrw_dirhist_7='/Users/jporteno'

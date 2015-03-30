@@ -9,8 +9,8 @@ filetype plugin indent on
 set foldmethod=indent
 set foldlevel=99
 
-set laststatus=2
-set statusline=%%<%f\ \ %{fugitive#statusline()}\ \ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set laststatus=2  " Status bar always on
+set statusline=%%<%f\ \ %y\ \ %{fugitive#statusline()}\ \ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 set incsearch  " Incremental search
 set ignorecase
