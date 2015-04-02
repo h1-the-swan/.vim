@@ -44,10 +44,10 @@ augroup SpellCheck
 	autocmd FileType tex,markdown,text setlocal spell spelllang=en_us
 augroup END
 " set global colors for spell check highlighting
-highlight SpellBad ctermfg=LightRed ctermbg=NONE
-highlight SpellCap ctermfg=LightRed ctermbg=NONE
-highlight SpellLocal ctermfg=LightRed ctermbg=NONE
-highlight SpellRare ctermfg=LightRed ctermbg=NONE
+highlight SpellBad ctermfg=LightBlue ctermbg=NONE
+highlight SpellCap ctermfg=LightBlue ctermbg=NONE
+highlight SpellLocal ctermfg=LightBlue ctermbg=NONE
+highlight SpellRare ctermfg=LightBlue ctermbg=NONE
 
 
 let g:pyflakes_use_quickfix = 0
