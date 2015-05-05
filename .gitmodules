@@ -58,3 +58,6 @@
 [submodule "bundle/tern_for_vim"]
 	path = bundle/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle/vim-wheel"]
+	path = bundle/vim-wheel
+	url = https://github.com/reedes/vim-wheel.git
