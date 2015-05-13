@@ -1,10 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/jporteno/.ipython/profile_default'
-let g:netrw_dirhist_2='/Users/jporteno/.ipython'
-let g:netrw_dirhist_3='/Users/jporteno/.ipython/nbextensions'
-let g:netrw_dirhist_4='/Users/jporteno/.ipython'
-let g:netrw_dirhist_5='/Users/jporteno'
-let g:netrw_dirhist_6='/Users/jporteno/.matplotlib'
-let g:netrw_dirhist_7='/Users/jporteno'
-let g:netrw_dirhist_8='/Users/jporteno/.npm'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/jporteno'
+let g:netrw_dirhist_2='/Users/jporteno/.vim'
+let g:netrw_dirhist_3='/Users/jporteno/.vim/ftdetect'
