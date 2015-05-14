@@ -1,0 +1,1 @@
+/Users/jporteno/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
