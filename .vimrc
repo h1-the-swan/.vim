@@ -16,6 +16,14 @@ set incsearch  " Incremental search
 set ignorecase
 set smartcase
 
+" NOTE: I really can't figure out how UltiSnips is working.
+" It seems to recognize the snippets in ~/.vim/bundle/snipmate/snippets
+" So go there. I don't think the other ones are working
+let g:UltiSnipsSnippetsDir=$HOME."/.vim/bundle/snipmate/UltiSnips/"
+let g:UltiSnipsListSnippets="<C-i>"
+"let g:UltiSnipsEnapleSnipmate=0
+
+
 
 " This is the default CursorLine background term color:
 let g:CursorLineDefaultColor=236
