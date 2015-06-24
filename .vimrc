@@ -46,6 +46,9 @@ execute "highlight CursorLine ctermbg=".g:CursorLineDefaultColor
 
 
 colorscheme Tomorrow-Night
+" For some reason, the above line wasn't working right on Ubuntu.
+" So I added the below line.
+execute "colorscheme Tomorrow-Night"
 
 " Turn on spell check
 augroup SpellCheck
