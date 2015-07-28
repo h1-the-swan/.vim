@@ -92,8 +92,9 @@ function! Highlight_cursor ()
 endfunction
 nnoremap <leader>] :silent call Highlight_cursor()<CR>
 
-" Shortcut to save changes to the current file:
+" 2 shortcuts to save changes to the current file:
 nnoremap <leader>s :update<CR>
+nnoremap <leader>w :update<CR>
 
 " Use the Pencil plugin for writing prose (using soft line wrappings)
 " https://github.com/reedes/vim-pencil
