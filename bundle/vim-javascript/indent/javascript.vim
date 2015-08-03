@@ -14,7 +14,7 @@ let b:did_indent = 1
 setlocal nosmartindent
 
 " Added by JP
-set expandtab
+set noexpandtab
 set shiftwidth=4
 set softtabstop=4
 
