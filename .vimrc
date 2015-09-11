@@ -9,6 +9,8 @@ filetype plugin indent on
 set foldmethod=indent
 set foldlevel=99
 
+set scrolloff=3 " Keep 3 lines below and above the cursor
+
 set laststatus=2  " Status bar always on
 set statusline=%%<%f\ \ %y\ \ %{fugitive#statusline()}\ \ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
