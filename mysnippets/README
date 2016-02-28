@@ -1,0 +1,8 @@
+These are user defined snippets for UltiSnips.
+The following lines in the vimrc worked to get UltiSnips to look here for snippets:
+```
+let g:UltiSnipsSnippetDirectories=['mysnippets', 'UltiSnips']
+let g:UltiSnipsSnippetsDir=expand("$HOME/.vim/mysnippets/")
+```
+
+These snippets have priority over default snippets in .vim/bundle/vim-snippets
