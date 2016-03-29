@@ -1,3 +1,10 @@
 snippet timestamp "A formatted string with the current timestamp" 
 '{:%Y-%m-%d %H:%M:%S}'.format(datetime.now())
 endsnippet
+
+snippet argparse "set up argument parser using argparse library" b
+import argparse
+parser = argparse.ArgumentParser(description="${1:TODO: description}")
+parser.add_argument("${2:}", help="${3:TODO: help text}")
+args = parser.parse_args()
+endsnippet
