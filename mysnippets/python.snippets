@@ -8,3 +8,7 @@ parser = argparse.ArgumentParser(description="${1:TODO: description}")
 parser.add_argument("${2:}", help="${3:TODO: help text}")
 args = parser.parse_args()
 endsnippet
+
+snippet flush "flush stdout" b
+sys.stdout.flush()
+endsnippet
