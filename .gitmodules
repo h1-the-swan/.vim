@@ -67,3 +67,9 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = git@github.com:honza/vim-snippets.git
+[submodule "bundle/vim-ipython"]
+	path = bundle/vim-ipython
+	url = git@github.com:ivanov/vim-ipython.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = http://github.com/davidhalter/jedi-vim
