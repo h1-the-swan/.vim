@@ -73,3 +73,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = http://github.com/davidhalter/jedi-vim
+[submodule "bundle/local_vimrc"]
+	path = bundle/local_vimrc
+	url = git@github.com:LucHermitte/local_vimrc.git
