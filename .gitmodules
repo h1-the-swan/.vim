@@ -76,3 +76,6 @@
 [submodule "bundle/local_vimrc"]
 	path = bundle/local_vimrc
 	url = git@github.com:LucHermitte/local_vimrc.git
+[submodule "bundle/lh-vim-lib"]
+	path = bundle/lh-vim-lib
+	url = git@github.com:LucHermitte/lh-vim-lib.git
