@@ -24,6 +24,7 @@ endsnippet
 snippet boilerplate "boilerplate code to start out a script" 
 import sys, os, time
 from datetime import datetime
+from timeit import default_timer as timer
 
 import logging
 logging.basicConfig(format='%(asctime)s %(name)s.%(lineno)d %(levelname)s : %(message)s',
@@ -36,7 +37,7 @@ def main(args):
     pass
 
 if __name__ == "__main__":
-    total_start = time.time()
+    total_start = timer()
     logger.info(" ".join(sys.argv))
     logger.info( '{:%Y-%m-%d %H:%M:%S}'.format(datetime.now()) )
     import argparse
@@ -48,6 +49,6 @@ if __name__ == "__main__":
         logger.setLevel(logging.DEBUG)
         logger.debug('debug mode is on')
     main(args)
-    total_end = time.time()
+    total_end = timer()
     logger.info('all finished. total time: {:.2f} seconds'.format(total_end-total_start))
 endsnippet
