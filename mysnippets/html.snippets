@@ -1,5 +1,11 @@
 snippet div "<div> with ID" w
 <div`!p snip.rv=' id="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""`>
 	$0
-</div>`!p snip.rv='  <!--/' + t[1] + '-->' if t[1] else ""`
+</div>`!p snip.rv='  <!--/#' + t[1] + '-->' if t[1] else ""`
+endsnippet
+
+snippet divc "<div> with class" w
+<div`!p snip.rv=' class="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""`>
+	$0
+</div>`!p snip.rv='  <!--/.' + t[1] + '-->' if t[1] else ""`
 endsnippet
