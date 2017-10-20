@@ -25,6 +25,11 @@ snippet boilerplate "boilerplate code to start out a script"
 import sys, os, time
 from datetime import datetime
 from timeit import default_timer as timer
+try:
+    from humanfriendly import format_timespan
+except ImportError:
+    def format_timespan(seconds):
+        return "{:.2f} seconds".format(seconds)
 
 import logging
 logging.basicConfig(format='%(asctime)s %(name)s.%(lineno)d %(levelname)s : %(message)s',
@@ -53,5 +58,5 @@ if __name__ == "__main__":
         logger.setLevel(logging.INFO)
     main(args)
     total_end = timer()
-    logger.info('all finished. total time: {:.2f} seconds'.format(total_end-total_start))
+    logger.info('all finished. total time: {}'.format(format_timespan(total_end-total_start)))
 endsnippet
