@@ -22,6 +22,10 @@ logger = logging.getLogger(__name__)
 endsnippet
 
 snippet boilerplate "boilerplate code to start out a script" 
+# -*- coding: utf-8 -*-
+
+DESCRIPTION = """${1:TODO: description}"""
+
 import sys, os, time
 from datetime import datetime
 from timeit import default_timer as timer
@@ -47,7 +51,7 @@ if __name__ == "__main__":
     logger.info(" ".join(sys.argv))
     logger.info( '{:%Y-%m-%d %H:%M:%S}'.format(datetime.now()) )
     import argparse
-    parser = argparse.ArgumentParser(description="${1:TODO: description}")
+    parser = argparse.ArgumentParser(description=DESCRIPTION)
     parser.add_argument("--debug", action='store_true', help="output debugging info")
     global args
     args = parser.parse_args()
