@@ -51,6 +51,7 @@ if __name__ == "__main__":
     root_logger.setLevel(logging.INFO)
     logger.info(" ".join(sys.argv))
     logger.info( '{:%Y-%m-%d %H:%M:%S}'.format(datetime.now()) )
+    logger.info("pid: {}".format(os.getpid()))
     import argparse
     parser = argparse.ArgumentParser(description=DESCRIPTION)
     parser.add_argument("--debug", action='store_true', help="output debugging info")
