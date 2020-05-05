@@ -97,3 +97,9 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git@github.com:tmhedberg/matchit.git
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "bundle/yats.vim"]
+	path = bundle/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
