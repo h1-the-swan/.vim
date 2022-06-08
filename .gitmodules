@@ -81,7 +81,7 @@
 	url = git@github.com:LucHermitte/lh-vim-lib.git
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
-	url = git://github.com/tpope/vim-vinegar.git
+	url = https://github.com/tpope/vim-vinegar.git
 [submodule "bundle/vim-pandoc"]
 	path = bundle/vim-pandoc
 	url = git@github.com:vim-pandoc/vim-pandoc.git
